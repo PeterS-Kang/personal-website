@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/lora/400.css';
+@import '@fontsource/lora/700.css';
+
+:root {
+  --light: #f7f7f7;
+  --dark: #111111;
+}
+
+@theme inline {
+  --color-light: var(--light);
+  --color-dark: var(--dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dark: #0a0a0a;
+    --light: #f7f7f7;
+  }
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes backgroundHintAnimation {
+  0% {
+    background-position: -150% -150%;
+    opacity: 0.1;
+  }
+  50% {
+    background-position: 150% 150%;
+    opacity: 0.4;
+  }
+  100% {
+    background-position: -150% -150%;
+    opacity: 0.1;
+  }
+}
+
+.animate-background-hint {
+  animation: backgroundHintAnimation 6s ease-in-out infinite;
+}
+
+/* Subtle radial gradient effect with increased intensity */
+.bg-subtle-orange {
+  background: radial-gradient(ellipse at center, rgba(220, 63, 255, 0.512) 30%, transparent 60%);
+  animation: backgroundHintAnimation 6s ease-in-out infinite;
+}
+
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.project-card {
+  position: relative;
+  border-radius: 0.5rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 0.75rem;
+  background: conic-gradient(
+    from 0deg,
+    #9f59f6,
+    #4f46e5,
+    #9f59f6,
+    #4f46e5,
+    #9f59f6
+  );
+  z-index: -2;
+  animation: rotate-border 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 12px rgba(159, 89, 246, 0.4);
+}
