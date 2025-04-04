@@ -82,7 +82,7 @@ export default function Home() {
           >
             {/* Gradient Heading */}
             <h1 className="text-4xl sm:text-5xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 leading-tight">
-              Hello, I'm Peter Kang
+              Hello, I&apos;m Peter Kang
             </h1>
 
             {/* Tagline/Subheading */}
@@ -93,7 +93,7 @@ export default function Home() {
 
             {/* Welcome Text */}
             <p className="text-base text-gray-600 leading-relaxed">
-              Welcome to my personal corner of the internet. I'm excited to share my journey, projects, and insights with you. Feel free to explore!
+              Welcome to my personal corner of the internet. I&apos;m excited to share my journey, projects, and insights with you. Feel free to explore!
             </p>
           </motion.div>
         </motion.div>

@@ -108,14 +108,14 @@ export default function About() {
               variants={skillItemVariants} // Re-use simple scale/opacity animation
             >
               <p className="text-xl sm:text-2xl font-medium mb-4 text-gray-800">
-                Hi there, I'm <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Peter Kang</span>!
+                Hi there, I&apos;m <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Peter Kang</span>!
               </p>
               {/* Updated text using theme colors and styles */}
               <p className="text-base sm:text-lg mb-4 leading-relaxed text-gray-700">
-                Currently based near <span className="font-medium text-gray-800">West Lafayette, Indiana</span>, I'm pursuing a degree in Computer Science at Purdue University. I'm passionate about building efficient, scalable software and tackling challenging problems through code. My coursework and projects have given me solid experience in software design, algorithms, and working across the tech stack.
+                Currently based near <span className="font-medium text-gray-800">West Lafayette, Indiana</span>, I&apos;m pursuing a degree in Computer Science at Purdue University. I&apos;m passionate about building efficient, scalable software and tackling challenging problems through code. My coursework and projects have given me solid experience in software design, algorithms, and working across the tech stack.
               </p>
               <p className="text-base sm:text-lg leading-relaxed text-gray-700">
-                Beyond the keyboard, I enjoy competitive gaming, participating in hackathons to rapidly prototype ideas, and staying curious about emerging technologies. I'm always eager to learn and collaborate on exciting projects.
+                Beyond the keyboard, I enjoy competitive gaming, participating in hackathons to rapidly prototype ideas, and staying curious about emerging technologies. I&apos;m always eager to learn and collaborate on exciting projects.
               </p>
             </motion.div>
           </motion.section>

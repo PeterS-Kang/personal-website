@@ -89,7 +89,7 @@ const ContactPage = () => {
         <div className="p-10 md:p-16">
           {/* Enhanced Heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 tracking-tight leading-tight">
-            Let's Create Something Amazing Together
+            Let&apos;s Create Something Amazing Together
           </h1>
 
           {/* Animated Grid Container */}
