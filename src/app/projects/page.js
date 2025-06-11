@@ -19,7 +19,7 @@ const projects = [
     title: "Mentr", // Example: More specific title
     description:
       "A web application connecting mentors and mentees, facilitating knowledge sharing and guidance within communities.", // Example: More specific description
-    githubLink: "https://github.com/yourusername/mentr", // Changed prop name
+    githubLink: "https://github.com/PeterS-Kang/mentr", // Changed prop name
     liveLink: null, // Optional: Add live demo link
     tech: ["React", "Flask", "MongoDB", "Python"] // Optional: Add tech stack tags
   },
